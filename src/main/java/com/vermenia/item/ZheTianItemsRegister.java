@@ -19,7 +19,7 @@ import static com.vermenia.item.ZheTianItemGroups.ZHETIAN_ITEMS;
 
 public class ZheTianItemsRegister {
 
-    public static final Item TIAN_DI_JING = RegisterItems("jingwen/tian_di_jing", new Item(new Item.Settings().maxCount(1)));
+    public static final Item TIAN_DI_JING = RegisterItems("jingwen/tian_di_jing", new JingWen("天帝经"));
 
     public static void Init() {
         ItemGroupEvents.modifyEntriesEvent(ZHETIAN_ITEMS).register(ZheTianItemsRegister::RegisterItemToGrop);
