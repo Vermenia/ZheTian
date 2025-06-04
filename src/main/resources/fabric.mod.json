@@ -1,0 +1,44 @@
+{
+	"schemaVersion": 1,
+	"id": "zhetian",
+	"version": "${version}",
+	"name": "ZheTian",
+	"description": "遮天Mod",
+	"authors": [
+		"Vermenia"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/Vermenia/ZheTian"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/zhetian/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.vermenia.ZheTian"
+		],
+		"client": [
+			"com.vermenia.ZheTianClient"
+		],
+		"fabric-datagen": [
+			"com.vermenia.ZheTianDataGenerator"
+		]
+	},
+	"mixins": [
+		"zhetian.mixins.json",
+		{
+			"config": "zhetian.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
