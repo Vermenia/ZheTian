@@ -1,5 +1,6 @@
 package com.vermenia;
 
+import com.vermenia.item.ZheTianItemGroups;
 import com.vermenia.item.ZheTianItemsRegister;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,6 +15,7 @@ public class ZheTian implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		LOGGER.info("Hello ZheTian!");
+		ZheTianItemGroups.Init();
 		ZheTianItemsRegister.Init();
 	}
 }
