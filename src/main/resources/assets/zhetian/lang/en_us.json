@@ -1,4 +1,6 @@
 {
   "item.zhetian.jingwen.tian_di_jing": "Tian Di Jing",
-  "itemGroup.zhetian_items": "ZheTian: Items"
+  "itemGroup.zhetian_items": "ZheTian: Items",
+  "category.vermenia": "ZheTian",
+  "key.vermenia.jingwen_screen": "Open Jing Wen Screen"
 }

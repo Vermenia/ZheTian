@@ -1,4 +1,6 @@
 {
   "item.zhetian.jingwen.tian_di_jing": "天帝经",
-  "itemGroup.zhetian_items": "遮天:物品"
+  "itemGroup.zhetian_items": "遮天:物品",
+  "category.vermenia": "遮天",
+  "key.vermenia.jingwen_screen": "经文界面"
 }
