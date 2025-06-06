@@ -3,8 +3,10 @@ package com.vermenia.screen;
 import com.vermenia.ZheTian;
 import net.fabricmc.fabric.api.client.networking.v1.ClientPlayNetworking;
 import net.fabricmc.fabric.api.networking.v1.PacketByteBufs;
+import net.minecraft.client.font.TextRenderer;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.gui.widget.ButtonWidget;
+import net.minecraft.client.gui.widget.TextWidget;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.nbt.NbtList;
 import net.minecraft.nbt.NbtString;
@@ -46,12 +48,9 @@ public class JingWenScreen extends Screen {
 
         int yOffset = this.height / 2 - 50;
         for (int i = 0; i < learnedItems.size(); i++) {
-            String item = learnedItems.get(i);
-            // 添加字符串（作为文本）
-            this.addDrawableChild(ButtonWidget.builder(
-                    Text.literal(item),
-                    button -> {}
-            ).dimensions(this.width / 2 - 100, yOffset + i * 30, 140, 20).build());
+            String name = learnedItems.get(i);
+            this.addDrawableChild(new TextWidget(this.width / 2 - 100,
+                    yOffset + i * 30, 140, 20, Text.of(name), this.textRenderer));
 
             this.addDrawableChild(ButtonWidget.builder(
                     Text.literal("写成经文"),
