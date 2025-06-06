@@ -11,8 +11,15 @@ import java.util.HashMap;
 import java.util.List;
 
 public class LearnedJingWen extends PersistentState {
-    private static boolean initialed = false;
-    private static final HashMap<String, List<String>> learnedItems = new HashMap<>();
+    private final HashMap<String, List<String>> learnedItems = new HashMap<>();
+
+    public static LearnedJingWen get(ServerWorld world) {
+        return world.getPersistentStateManager().getOrCreate(
+                LearnedJingWen::fromNbt,
+                LearnedJingWen::new,
+                "learned_jingwen"
+        );
+    }
 
     @Override
     public NbtCompound writeNbt(NbtCompound nbt) {
@@ -32,7 +39,7 @@ public class LearnedJingWen extends PersistentState {
         LearnedJingWen data = new LearnedJingWen();
         NbtCompound playersNbt = nbt.getCompound("PlayerLearnedItems");
         for (String player : playersNbt.getKeys()) {
-            NbtList list = nbt.getList(player, NbtString.STRING_TYPE);
+            NbtList list = playersNbt.getList(player, NbtString.STRING_TYPE);
             List<String> learnedJingWen = new ArrayList<>();
             for (int i = 0; i < list.size(); i++) {
                 learnedJingWen.add(list.getString(i));
@@ -46,19 +53,11 @@ public class LearnedJingWen extends PersistentState {
         List<String> learnedJingWen = learnedItems.computeIfAbsent(name, k -> new ArrayList<>());
         if (!learnedJingWen.contains(item)) {
             learnedJingWen.add(item);
-            markDirty(); // 标记数据已更改，触发保存
+            markDirty(); // 必须标记，否则不会触发保存
         }
     }
 
-    public List<String> getLearnedItems(ServerWorld world, String name) {
-        if (!initialed) {
-            world.getPersistentStateManager().getOrCreate(
-                    LearnedJingWen::fromNbt,
-                    LearnedJingWen::new,
-                    "learned_jingwen"
-            );
-            initialed = true;
-        }
+    public List<String> getLearnedItems(String name) {
         return learnedItems.computeIfAbsent(name, k -> new ArrayList<>());
     }
 }
