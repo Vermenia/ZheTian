@@ -17,8 +17,8 @@ import java.util.List;
 
 public class JingWenScreen extends Screen {
     static private final List<String> learnedItems = new ArrayList<>();
-    public JingWenScreen(Text title) {
-        super(title);
+    public JingWenScreen() {
+        super(Text.literal("经文"));
     }
 
     @Override
