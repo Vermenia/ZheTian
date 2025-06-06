@@ -1,6 +1,8 @@
 {
   "item.zhetian.jingwen.tian_di_jing": "Tian Di Jing",
+  "item.zhetian.jingwen.tian_di_jing_lun_hai": "Tian Di Jing: Lun Hai",
   "itemGroup.zhetian_items": "ZheTian: Items",
   "category.vermenia": "ZheTian",
-  "key.vermenia.jingwen_screen": "Open Jing Wen Screen"
+  "key.vermenia.jingwen_screen": "Jing Wen",
+  "key.vermenia.xiulian_screen": "Xiu Lian"
 }
