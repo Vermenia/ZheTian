@@ -1,6 +1,11 @@
 {
   "item.zhetian.jingwen.tian_di_jing": "Tian Di Jing",
   "item.zhetian.jingwen.tian_di_jing_lun_hai": "Tian Di Jing: Lun Hai",
+  "item.zhetian.jingwen.tian_di_jing_dao_gong": "Tian Di Jing: Dao Gong",
+  "item.zhetian.jingwen.tian_di_jing_si_ji": "Tian Di Jing: Si Ji",
+  "item.zhetian.jingwen.tian_di_jing_sheng_long": "Tian Di Jing: Sheng Long",
+  "item.zhetian.jingwen.tian_di_jing_xian_tai": "Tian Di Jing: Xian Tai",
+  "item.zhetian.wupin.yao_ye": "Yao Ye",
   "itemGroup.zhetian_items": "ZheTian: Items",
   "category.vermenia": "ZheTian",
   "key.vermenia.jingwen_screen": "Jing Wen",

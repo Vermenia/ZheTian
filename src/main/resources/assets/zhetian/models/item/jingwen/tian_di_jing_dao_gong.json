@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "zhetian:item/jingwen/tian_di_jing"
+  }
+}

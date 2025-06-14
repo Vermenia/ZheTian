@@ -1,6 +1,11 @@
 {
   "item.zhetian.jingwen.tian_di_jing": "天帝经",
   "item.zhetian.jingwen.tian_di_jing_lun_hai": "天帝经：轮海卷",
+  "item.zhetian.jingwen.tian_di_jing_dao_gong": "天帝经：道宫卷",
+  "item.zhetian.jingwen.tian_di_jing_si_ji": "天帝经：四极卷",
+  "item.zhetian.jingwen.tian_di_jing_sheng_long": "天帝经：升龙卷",
+  "item.zhetian.jingwen.tian_di_jing_xian_tai": "天帝经：仙台卷",
+  "item.zhetian.wupin.yao_ye": "药液",
   "itemGroup.zhetian_items": "遮天:物品",
   "category.vermenia": "遮天",
   "key.vermenia.jingwen_screen": "经文界面",

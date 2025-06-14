@@ -54,8 +54,8 @@ public class JingWen extends Item {
             case DaoGong  -> "§d";   // 粉色
             case SiJi     -> "§c";   // 红色
             case ShengLong-> "§a";   // 绿色
-            case XianTai  -> "§9";   // 蓝色
-            case ZhanDou  -> "§e";   // 黄色
+            case XianTai  -> "§e";   // 黄色
+            case ZhanDou  -> "§f";
         };
         return colorCode + tooltip;
     }
