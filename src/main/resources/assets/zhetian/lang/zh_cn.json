@@ -6,7 +6,12 @@
   "item.zhetian.jingwen.tian_di_jing_sheng_long": "天帝经：升龙卷",
   "item.zhetian.jingwen.tian_di_jing_xian_tai": "天帝经：仙台卷",
   "item.zhetian.wupin.yao_ye": "药液",
+  "item.zhetian.wupin.yu_shi": "玉石",
+  "item.zhetian.wupin.yuan_shi": "源石",
+  "block.zhetian.ore.yu_kuang": "玉矿",
+  "block.zhetian.ore.yuan_shi_kuang": "源石矿",
   "itemGroup.zhetian_items": "遮天:物品",
+  "itemGroup.zhetian_blocks": "遮天:方块",
   "category.vermenia": "遮天",
   "key.vermenia.jingwen_screen": "经文界面",
   "key.vermenia.xiulian_screen": "修炼界面"

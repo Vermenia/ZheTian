@@ -28,6 +28,9 @@ public class ZheTianItemsRegister {
     public static final Item TIAN_DI_JING_XIAN_TAI = RegisterItems("jingwen/tian_di_jing_xian_tai", new JingWen("天帝经：仙台卷", JingWen.JingWenType.XianTai));
     // 药液
     public static final Item YAO_YE = RegisterItems("wupin/yao_ye", new YaoYe());
+    // 材料
+    public static final Item YU_SHI = RegisterItems("wupin/yu_shi", new CaiLiao());
+    public static final Item YUAN_SHI = RegisterItems("wupin/yuan_shi", new CaiLiao());
 
     public static void Init() {
         ItemGroupEvents.modifyEntriesEvent(ZHETIAN_ITEMS).register(ZheTianItemsRegister::RegisterItemToGrop);
@@ -45,6 +48,8 @@ public class ZheTianItemsRegister {
         entries.add(TIAN_DI_JING_HUA_LONG);
         entries.add(TIAN_DI_JING_XIAN_TAI);
         entries.add(YAO_YE);
+        entries.add(YU_SHI);
+        entries.add(YUAN_SHI);
 
         SettingProperties();
     }

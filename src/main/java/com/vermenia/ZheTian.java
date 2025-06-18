@@ -1,5 +1,6 @@
 package com.vermenia;
 
+import com.vermenia.block.ZheTianBlock;
 import com.vermenia.data.LearnedJingWen;
 import com.vermenia.item.ZheTianItemGroups;
 import com.vermenia.item.ZheTianItemsRegister;
@@ -39,6 +40,7 @@ public class ZheTian implements ModInitializer {
 
 		ZheTianItemGroups.Init();
 		ZheTianItemsRegister.Init();
+		ZheTianBlock.Init();
 
 		// 注册请求数据网络包
 		ServerPlayNetworking.registerGlobalReceiver(REQUEST_LEARNED_DATA, (server, player, handler, buf, responseSender) -> {
